@@ -58,7 +58,7 @@ $(document).ready(function(){
     loadTweets(allTweets);
   });
 
-  $(document).on("click", "a", (event) => {
+  $('.tweet-container').on("click", "a", (event) => {
     var userName = $(event.currentTarget).text().slice(1);
     var userTweets = streams['users'][userName];
     loadTweets(userTweets);
